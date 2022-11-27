@@ -1,0 +1,52 @@
+{
+  "name": "landing-cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config config/webpack.dev.js",
+    "build": "webpack --config config/webpack.prod.js",
+    "prettier": "prettier --write .",
+    "stylelint": "stylelint 'src/**/*.{css,sass,scss}'",
+    "eslint": "eslint src",
+    "lint": "npm-run-all --parallel prettier stylelint eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MargaritaRoda/Landing-CV.git"
+  },
+  "author": "Margarita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MargaritaRoda/Landing-CV/issues"
+  },
+  "homepage": "https://github.com/MargaritaRoda/Landing-CV#readme",
+  "devDependencies": {
+    "@prettier/plugin-pug": "^2.2.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.21.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.0",
+    "normalize.css": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1",
+    "pug-plugin": "^4.1.1",
+    "sass": "^1.54.4",
+    "sass-loader": "^13.0.2",
+    "stylelint": "^14.10.0",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "stylelint-scss": "^4.3.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}

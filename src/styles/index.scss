@@ -1,0 +1,27 @@
+@import "normalize.css";
+@import "bootstrap/scss/bootstrap-grid";
+
+
+@import './fonts';
+@import './global';
+
+@import './blocks/about';
+
+.container {
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid $main-color;
+}
+
+.header a {
+  font-size: 1.5rem;
+  color: $main-color;
+}
+.header a:hover {
+  text-decoration: line-through;
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landing CV</title>
+    <% for (var css in htmlWebpackPlugin.files.css) { %>
+    <link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
+    <% } %>
+</head>
+<body>
+
+
+<div class="container">
+    <nav class="header">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#laguages">Languages</a>
+        <a href="#contact">Contact me</a>
+    </nav>
+    <article class="about__items col-12">
+        <div class="about__item col-6">
+            <h4 class="about__item-title">Sergei Alyoshin</h4>
+            <h3 class="about__subtitle">Front-end developer</h3>
+            <p>Hi, I am Sergei Alyoshin, and I am Junior Front-end. </br></br>
+
+                I have completed Front-end courses at IT School Intellect Fox and have basic knowledge of HTML, CSS, JavaScript, React and Redux.</p>
+            <div class="about__btn-wrap">
+                <button class="about__item-btn">Download CV</button>
+                <button class="about__item-btn">Contact me</button>
+            </div>
+        </div>
+        <div class="about__item">
+            <img src="<%= require('./assets/images/photo.png') %>" alt='photo')/>
+        </div>
+    </article>
+</div>
+
+</body>
+</html>
