@@ -7,6 +7,7 @@
 
 @import './blocks/about';
 @import './blocks/skills';
+@import './blocks/experience';
 
 .svg-sprite {
     position: absolute;
@@ -41,7 +42,7 @@
   display: flex;
   justify-content: center;
   padding-top: 72px;
-  margin-top: 72px;
+  margin-top: 0;
   margin-bottom: 56px;
 }
 

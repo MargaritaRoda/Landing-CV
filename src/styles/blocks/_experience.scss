@@ -1,0 +1,99 @@
+.row{
+  &__exp-art {
+    position: relative;
+    padding-top: 56px;
+    padding-bottom: 45px;
+    margin-bottom: 72px;
+  }
+  &__exp-art:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: $main-color;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+
+  }
+
+}
+.exp-art {
+  display: flex;
+  &__right, &__left  {
+    display: flex;
+    flex-direction: column;
+  }
+  &__right-side{
+    text-align: right;
+  }
+  &__right {
+    justify-content: center;
+    position: relative;
+    &--first, &--third {
+      padding: 0 0 0 16px;
+    }
+    &--first:before {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: $button-color;
+      border: 1px solid $button-color;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+    &--second {
+      padding: 0 16px 0 0;
+    }
+    &--second:before {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: $ellipse-color;
+      border: 1px solid $ellipse-color;
+      top: 50%;
+      left: 100%;
+      transform: translate(-50%, -50%);
+    }
+    &--third:before {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: $ellipse-color;
+      border: 1px solid $ellipse-color;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    color: $primary-color;
+    margin: 0 0 8px 0;
+  }
+  &__subtitle {
+    color: $primary-color;
+    margin: 0 0 8px 0;
+
+  }
+  &__p {
+    font-size: 16px;
+    color: $article-color;
+    margin-top: 8px;
+  }
+  &__date {
+    color: $article-color;
+    margin: 0;
+    font-size: 24px;
+    &--now {
+      color: $button-color;
+    }
+  }
+}
