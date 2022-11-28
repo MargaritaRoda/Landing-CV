@@ -6,9 +6,20 @@
 @import './global';
 
 @import './blocks/about';
+@import './blocks/skills';
+
+.svg-sprite {
+    position: absolute;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
 
 .container {
   margin: 0 auto;
+}
+.container__background {
+  background-color: $background-container;
 }
 .header {
   display: flex;
@@ -25,3 +36,12 @@
 .header a:hover {
   text-decoration: line-through;
 }
+
+.title {
+  display: flex;
+  justify-content: center;
+  padding-top: 72px;
+  margin-top: 72px;
+  margin-bottom: 56px;
+}
+
