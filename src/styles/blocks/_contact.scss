@@ -1,0 +1,44 @@
+.contact {
+  &__left, &__right {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    color: $black;
+  }
+  &__right {
+    justify-content: center;
+  }
+  &__img {
+    border-radius: 50%;
+    max-width: 412px;
+    aspect-ratio: 1/1;
+  }
+  &__mail {
+    text-decoration: underline;
+  }
+  &__logos {
+    display: flex;
+    gap: 16px;
+  }
+  &__logo {
+    width: 56px;
+    height: 56px;
+
+  }
+  &__logo:last-child {
+    background-color: #34AADF;
+    border-radius: 50%;
+  }
+  &__mail {
+    margin-top: 104px;
+    margin-bottom: 8px;
+  }
+  &__number {
+    margin-top: 0;
+    }
+
+}
+
+.row {
+  padding-bottom: 72px;
+}
