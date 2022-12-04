@@ -1,0 +1,15 @@
+$section-background-color: #fafafa;
+
+.section {
+  &__title {
+    display: flex;
+    justify-content: center;
+    padding-top: 72px;
+    margin-top: 0;
+    margin-bottom: 56px;
+  }
+
+  &__background {
+    background-color: $section-background-color;
+  }
+}

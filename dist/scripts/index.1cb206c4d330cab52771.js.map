@@ -1,0 +1,1 @@
+{"version":3,"file":"scripts/index.1cb206c4d330cab52771.js","mappings":"mBAIAA,QAAQC,IAFY,gB","sources":["webpack://landing-cv/./src/js/index.js"],"sourcesContent":["import '../styles/index.scss';\n\nconst programName = 'Hello, World!';\n\nconsole.log(programName);\n"],"names":["console","log"],"sourceRoot":""}

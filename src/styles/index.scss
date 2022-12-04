@@ -7,10 +7,11 @@
 @import './blocks/about';
 @import './blocks/skills';
 @import './blocks/experience';
-@import 'blocks/project';
-@import 'blocks/laguages';
-@import 'blocks/contact';
-@import 'blocks/education';
+@import './blocks/project';
+@import './blocks/laguages';
+@import './blocks/contact';
+@import './blocks/education';
+@import './blocks/section';
 
 .svg-sprite {
   position: absolute;
@@ -20,13 +21,10 @@
 }
 
 .container {
-  margin: 0 auto;
   max-width: 1230px;
 }
 
-.container__background {
-  background-color: $background-container;
-}
+
 
 .header {
   display: flex;
@@ -46,11 +44,4 @@
   text-decoration: line-through;
 }
 
-.title {
-  display: flex;
-  justify-content: center;
-  padding-top: 72px;
-  margin-top: 0;
-  margin-bottom: 56px;
-}
 

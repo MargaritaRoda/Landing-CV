@@ -6,7 +6,7 @@
     margin-bottom: 72px;
   }
 
-  &__row:before {
+  &__row::before {
     content: '';
     position: absolute;
     width: 1px;
