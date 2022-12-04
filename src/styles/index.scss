@@ -1,7 +1,6 @@
 @import "normalize.css";
 @import "bootstrap/scss/bootstrap-grid";
 
-
 @import './fonts';
 @import './global';
 
@@ -11,24 +10,29 @@
 @import 'blocks/project';
 @import 'blocks/laguages';
 @import 'blocks/contact';
+@import 'blocks/education';
 
 .svg-sprite {
-    position: absolute;
-    visibility: hidden;
-    width: 0;
-    height: 0;
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }
 
 .container {
   margin: 0 auto;
+  max-width: 1230px;
 }
+
 .container__background {
   background-color: $background-container;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
-  padding-top: 2.5rem;
+  max-width: 1230px;
+  margin: 40px auto;
   padding-bottom: 2.5rem;
   border-bottom: 1px solid $main-color;
 }
@@ -37,6 +41,7 @@
   font-size: 1.5rem;
   color: $main-color;
 }
+
 .header a:hover {
   text-decoration: line-through;
 }

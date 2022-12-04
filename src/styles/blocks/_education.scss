@@ -1,0 +1,33 @@
+.education {
+  &__row {
+    position: relative;
+    padding-top: 86px;
+    padding-bottom: 86px;
+    margin-bottom: 72px;
+  }
+
+  &__row:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: $main-color;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    margin-left: 48px;
+
+    &--second {
+      align-items: end;
+    }
+  }
+
+  &__col {
+    margin-top: 111px;
+    margin-bottom: 107px;
+  }
+}

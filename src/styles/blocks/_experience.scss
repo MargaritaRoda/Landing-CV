@@ -1,11 +1,12 @@
-.row{
-  &__exp-art {
+.exp-art {
+  &__row {
     position: relative;
     padding-top: 56px;
-    padding-bottom: 45px;
+    padding-bottom: 24px;
     margin-bottom: 72px;
   }
-  &__exp-art:before {
+
+  &__row:before {
     content: '';
     position: absolute;
     width: 1px;
@@ -13,25 +14,30 @@
     top: 0;
     bottom: 0;
     left: 50%;
-
   }
 
 }
+
 .exp-art {
   display: flex;
-  &__right, &__left  {
+
+  &__right, &__left {
     display: flex;
     flex-direction: column;
   }
-  &__right-side{
+
+  &__right-side {
     text-align: right;
   }
+
   &__right {
     justify-content: center;
     position: relative;
+
     &--first, &--third {
       padding: 0 0 0 16px;
     }
+
     &--first:before {
       content: '';
       position: absolute;
@@ -44,9 +50,12 @@
       left: 0;
       transform: translate(-50%, -50%);
     }
+
     &--second {
       padding: 0 16px 0 0;
+      margin-left: 26px;
     }
+
     &--second:before {
       content: '';
       position: absolute;
@@ -59,6 +68,7 @@
       left: 100%;
       transform: translate(-50%, -50%);
     }
+
     &--third:before {
       content: '';
       position: absolute;
@@ -73,25 +83,36 @@
     }
   }
 
+  &__timeline {
+    margin-top: 26px;
+  }
+
   &__title {
     font-size: 24px;
     color: $primary-color;
-    margin: 0 0 8px 0;
+    margin-top: 8px;
+    margin-bottom: 4px;
   }
+
   &__subtitle {
     color: $primary-color;
-    margin: 0 0 8px 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 1.45rem;
 
   }
+
   &__p {
     font-size: 16px;
     color: $article-color;
     margin-top: 8px;
   }
+
   &__date {
     color: $article-color;
     margin: 0;
     font-size: 24px;
+
     &--now {
       color: $button-color;
     }

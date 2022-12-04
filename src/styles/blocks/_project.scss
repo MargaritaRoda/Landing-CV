@@ -4,19 +4,27 @@
     flex-direction: column;
     font-size: 1.5rem;
   }
+
+  &__img {
+    max-width: 603px;
+    aspect-ratio: 603/377;
+  }
+
   &__slider {
     display: flex;
     gap: 4px;
     justify-content: flex-end;
     position: relative;
   }
+
   &__next {
     font-size: 1rem;
     color: $button-color;
     text-decoration: underline;
   }
+
   &__next:after {
-    content: " " ;
+    content: " ";
     width: 9px;
     height: 9px;
     border-top: 3px solid $button-color;
@@ -32,10 +40,12 @@
     color: $primary-color;
     margin: 60px 0 8px 0;
   }
+
   &__p {
     color: $article-color;
     margin: 0 0 72px 0;
   }
+
   &__btn {
     width: 185px;
     height: 56px;
@@ -49,21 +59,25 @@
     width: 17px;
     height: 17px;
     border: 1px solid $button-color;
+
     &--blue {
       background-color: $button-color;
     }
+
     &--padd {
       padding-right: 0;
       padding-left: 0;
     }
   }
-}
 
-.row {
-  &__project {
+  &__row {
+    margin-bottom: 56px;
+  }
+
+  &__row-circle {
     display: flex;
     gap: 17px;
-    margin-top: 56px;
     padding-bottom: 72px;
   }
 }
+
